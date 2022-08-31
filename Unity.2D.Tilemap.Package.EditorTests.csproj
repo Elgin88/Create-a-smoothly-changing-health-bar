@@ -11,7 +11,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{D2F81122-81FE-C2A8-913B-19DC4C3DCFF0}</ProjectGuid>
+    <ProjectGuid>{FEBDE324-33EF-ECEE-5F03-F2B9B6B50D4A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Unity.2D.Tilemap.Package.EditorTests</AssemblyName>
@@ -284,7 +284,7 @@
  <HintPath>/Applications/Unity/Hub/Editor/2020.3.22f1/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="nunit.framework">
- <HintPath>/Users/alekseielgin/GitHub/Generation-of-enemies-per-level/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll</HintPath>
+ <HintPath>/Users/alekseielgin/GitHub/Creating-the-main-menu/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll</HintPath>
  </Reference>
  <Reference Include="mscorlib">
  <HintPath>/Applications/Unity/Hub/Editor/2020.3.22f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -637,27 +637,27 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.2D.Tilemap.Editor.csproj">
-      <Project>{ABEAA2F2-8ED3-61A0-599B-2CC45D666F7B}</Project>
+      <Project>{457A250C-DC5F-585D-29F2-6CA9326AD4D3}</Project>
       <Name>Unity.2D.Tilemap.Editor</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.TestRunner.csproj">
-      <Project>{B7D9071A-EDF7-B1DD-EB30-6B3F9C37385D}</Project>
+      <Project>{15D9B3C0-7CAD-2510-0099-26E7F1E6103D}</Project>
       <Name>UnityEngine.TestRunner</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.TestRunner.csproj">
-      <Project>{0CFF0E08-BD94-FFF3-B3C0-011F9C2350B8}</Project>
+      <Project>{25F7AB90-0603-8D2B-F7CF-324941212A0C}</Project>
       <Name>UnityEditor.TestRunner</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.UI.csproj">
-      <Project>{1CFE14C8-C145-7BD1-B948-7322A95AD243}</Project>
+      <Project>{448013B1-56C0-8CA4-8C27-B9C32ADEDA80}</Project>
       <Name>UnityEditor.UI</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.csproj">
-      <Project>{C3AD7095-EE46-7655-ECBB-42C4423EFDB5}</Project>
+      <Project>{3BC4B07A-ED1D-5E63-FEB0-A429389D64F9}</Project>
       <Name>UnityEngine.UI</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>

@@ -11,7 +11,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{E3A32267-03D4-2C5F-A358-E70797635659}</ProjectGuid>
+    <ProjectGuid>{4E5357EC-7AD7-3270-0833-08A9151ACB86}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Unity.2D.Psdimporter.Editor</AssemblyName>
@@ -297,22 +297,22 @@
  <HintPath>/Applications/Unity/Hub/Editor/2020.3.22f1/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Plastic.Newtonsoft.Json">
- <HintPath>/Users/alekseielgin/GitHub/Generation-of-enemies-per-level/Library/PackageCache/com.unity.collab-proxy@1.13.5/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll</HintPath>
+ <HintPath>/Users/alekseielgin/GitHub/Creating-the-main-menu/Library/PackageCache/com.unity.collab-proxy@1.13.5/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Plastic.Antlr3.Runtime">
- <HintPath>/Users/alekseielgin/GitHub/Generation-of-enemies-per-level/Library/PackageCache/com.unity.collab-proxy@1.13.5/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll</HintPath>
+ <HintPath>/Users/alekseielgin/GitHub/Creating-the-main-menu/Library/PackageCache/com.unity.collab-proxy@1.13.5/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="unityplastic">
- <HintPath>/Users/alekseielgin/GitHub/Generation-of-enemies-per-level/Library/PackageCache/com.unity.collab-proxy@1.13.5/Lib/Editor/PlasticSCM/unityplastic.dll</HintPath>
+ <HintPath>/Users/alekseielgin/GitHub/Creating-the-main-menu/Library/PackageCache/com.unity.collab-proxy@1.13.5/Lib/Editor/PlasticSCM/unityplastic.dll</HintPath>
  </Reference>
  <Reference Include="log4netPlastic">
- <HintPath>/Users/alekseielgin/GitHub/Generation-of-enemies-per-level/Library/PackageCache/com.unity.collab-proxy@1.13.5/Lib/Editor/PlasticSCM/log4netPlastic.dll</HintPath>
+ <HintPath>/Users/alekseielgin/GitHub/Creating-the-main-menu/Library/PackageCache/com.unity.collab-proxy@1.13.5/Lib/Editor/PlasticSCM/log4netPlastic.dll</HintPath>
  </Reference>
  <Reference Include="Newtonsoft.Json">
- <HintPath>/Users/alekseielgin/GitHub/Generation-of-enemies-per-level/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
+ <HintPath>/Users/alekseielgin/GitHub/Creating-the-main-menu/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
  </Reference>
  <Reference Include="nunit.framework">
- <HintPath>/Users/alekseielgin/GitHub/Generation-of-enemies-per-level/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll</HintPath>
+ <HintPath>/Users/alekseielgin/GitHub/Creating-the-main-menu/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll</HintPath>
  </Reference>
  <Reference Include="mscorlib">
  <HintPath>/Applications/Unity/Hub/Editor/2020.3.22f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -665,52 +665,52 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="PsdPlugin.csproj">
-      <Project>{DB2DB129-DA0E-0D3C-2096-035A624C547B}</Project>
+      <Project>{B3C9F382-9122-FD51-A1F5-7B53397C34E9}</Project>
       <Name>PsdPlugin</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="Unity.InternalAPIEditorBridge.001.csproj">
-      <Project>{D0914B66-2571-4328-5E64-6B0A8232CF15}</Project>
+      <Project>{B6581BF2-57DB-1E65-F5F7-C5B93382CADC}</Project>
       <Name>Unity.InternalAPIEditorBridge.001</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="Unity.2D.Common.Editor.csproj">
-      <Project>{BBE7A998-59A5-141E-834A-457D5B4D14F3}</Project>
+      <Project>{0CF1E90C-1B59-5128-D65F-A7DD9345D24B}</Project>
       <Name>Unity.2D.Common.Editor</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="Unity.2D.Animation.Editor.csproj">
-      <Project>{5722D116-8BFB-CCE7-3E93-8963BA89505A}</Project>
+      <Project>{894B5AB8-FE48-6C91-F4AE-2C41A9F8FBB7}</Project>
       <Name>Unity.2D.Animation.Editor</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="Unity.2D.Animation.Runtime.csproj">
-      <Project>{A74C301F-7927-9805-98C1-2F1FEDE27111}</Project>
+      <Project>{98B72BBF-42CB-083E-1C5E-F0D69CB19DED}</Project>
       <Name>Unity.2D.Animation.Runtime</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="Unity.2D.Sprite.Editor.csproj">
-      <Project>{7A9E21A2-90C3-9BB0-F4C1-4B7A827DB0F8}</Project>
+      <Project>{477A970B-65AF-E652-0C4B-6C2AFD01D67D}</Project>
       <Name>Unity.2D.Sprite.Editor</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.UI.csproj">
-      <Project>{1CFE14C8-C145-7BD1-B948-7322A95AD243}</Project>
+      <Project>{448013B1-56C0-8CA4-8C27-B9C32ADEDA80}</Project>
       <Name>UnityEditor.UI</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.csproj">
-      <Project>{C3AD7095-EE46-7655-ECBB-42C4423EFDB5}</Project>
+      <Project>{3BC4B07A-ED1D-5E63-FEB0-A429389D64F9}</Project>
       <Name>UnityEngine.UI</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.TestRunner.csproj">
-      <Project>{B7D9071A-EDF7-B1DD-EB30-6B3F9C37385D}</Project>
+      <Project>{15D9B3C0-7CAD-2510-0099-26E7F1E6103D}</Project>
       <Name>UnityEngine.TestRunner</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.TestRunner.csproj">
-      <Project>{0CFF0E08-BD94-FFF3-B3C0-011F9C2350B8}</Project>
+      <Project>{25F7AB90-0603-8D2B-F7CF-324941212A0C}</Project>
       <Name>UnityEditor.TestRunner</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
