@@ -992,7 +992,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _slider: {fileID: 879792133}
   _player: {fileID: 874339284}
-  _speed: 1
+  _speed: 0.5
 --- !u!1 &887665365
 GameObject:
   m_ObjectHideFlags: 0

@@ -9,84 +9,42 @@ public class HealthSlider : MonoBehaviour
     [SerializeField] private Player _player;
     [SerializeField] private float _speed;
 
+    private float _targetValue = 1;
+    private float _maxValue = 1;
 
-
-
-
-    private void Update()
+    private void Start()
     {
-        _slider.value = Mathf.MoveTowards(_slider.value, 1, _speed * Time.deltaTime);
-
-        if (_slider.value == 1)
-        {
-
-        }
+        StartCoroutine(SmoothChange());
     }
 
+    private void OnEnable()
+    {
+        _player.HealthIsChanged += OnChangedValue;
+    }
 
+    private void OnDisable()
+    {
+        _player.HealthIsChanged -= OnChangedValue;
+    }
 
+    private void OnChangedValue(int targetValue, int maxValue)
+    {
+        _targetValue = targetValue;
+        _maxValue = maxValue;
 
+        SmoothChange();
+    }
 
+    private IEnumerator SmoothChange()
+    {
+        while (true)
+        {
+            if (_slider.value != (float)_targetValue)
+            {
+                _slider.value = Mathf.MoveTowards(_slider.value, (float)_targetValue / _maxValue, _speed * Time.deltaTime);
+            }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    //private void Start()
-    //{
-    //    StartCoroutine(SmoothChange());
-    //}
-
-    //private void OnEnable()
-    //{
-    //    _player.HealthIsChanged += OnChangedValue;
-    //}
-
-    //private void OnDisable()
-    //{
-    //    _player.HealthIsChanged -= OnChangedValue;
-    //}
-
-    //private void OnChangedValue(int targetValue, int maxValue)
-    //{
-    //    _targetValue = targetValue;
-    //    _maxValue = maxValue;
-
-    //    SmoothChange();
-    //}
-
-    //private IEnumerator SmoothChange()
-    //{
-    //    float startValue = _slider.value;
-
-    //    while (true)
-    //    {
-    //        if (_slider.value != (float)_targetValue)
-    //        {
-    //            _slider.value = Mathf.MoveTowards(startValue, (float)_targetValue / _maxValue, _speed * Time.deltaTime);
-    //        }
-
-    //        yield return null;
-    //    }
-    //}
+            yield return null;
+        }
+    }
 }
