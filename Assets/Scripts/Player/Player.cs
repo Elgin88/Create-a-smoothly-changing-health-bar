@@ -24,28 +24,24 @@ public class Player : MonoBehaviour
         _animator.Play(_idleRight);
     }
 
-    public void ApplyDamage(int damage)
+    public void Damage(int damage)
     {
         _currentHealth -= damage;
+        _currentHealth = Mathf.Clamp(_currentHealth, 0, _maxHealth);
 
-        if (_currentHealth <= 0)
-        {
-            _currentHealth = 0;
+        if (_currentHealth == 0)
             gameObject.SetActive (false);
-        }
-
+        
         HealthIsChanged?.Invoke(_currentHealth,_maxHealth);
     }
 
-    public void ApplyHealing(int damage)
+    public void Heal(int damage)
     {
         if (_currentHealth == 0)
             gameObject.SetActive(true);
 
         _currentHealth += damage;
-
-        if (_currentHealth > _maxHealth)
-            _currentHealth = _maxHealth;        
+        _currentHealth = Mathf.Clamp(_currentHealth, 0, _maxHealth);       
 
         HealthIsChanged?.Invoke(_currentHealth, _maxHealth);
     }

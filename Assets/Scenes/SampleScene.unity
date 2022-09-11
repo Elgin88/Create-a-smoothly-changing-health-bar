@@ -209,7 +209,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 874339284}
         m_TargetAssemblyTypeName: Player, Assembly-CSharp
-        m_MethodName: ApplyHealing
+        m_MethodName: Heal
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1549,7 +1549,6 @@ GameObject:
   - component: {fileID: 1514315222}
   - component: {fileID: 1514315221}
   - component: {fileID: 1514315220}
-  - component: {fileID: 1514315223}
   m_Layer: 5
   m_Name: DamageButton
   m_TagString: Untagged
@@ -1623,7 +1622,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 874339284}
         m_TargetAssemblyTypeName: Player, Assembly-CSharp
-        m_MethodName: ApplyDamage
+        m_MethodName: Damage
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1671,18 +1670,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1514315218}
   m_CullTransparentMesh: 1
---- !u!114 &1514315223
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1514315218}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d7ba816dbc10b42b28c8e65c306da029, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1658495346
 GameObject:
   m_ObjectHideFlags: 0

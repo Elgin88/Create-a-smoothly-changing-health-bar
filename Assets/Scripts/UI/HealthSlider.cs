@@ -39,7 +39,7 @@ public class HealthSlider : MonoBehaviour
     {
         while (true)
         {
-            _slider.value = Mathf.MoveTowards(_slider.value, (float) targetHealt / maxHealth, _speedOfDuration * Time.deltaTime);
+            _slider.value = Mathf.MoveTowards(_slider.value, (float) targetHealt/maxHealth, _speedOfDuration * Time.deltaTime);
             
             yield return null;
         }  
