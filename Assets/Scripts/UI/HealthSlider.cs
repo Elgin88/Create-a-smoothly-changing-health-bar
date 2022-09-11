@@ -7,44 +7,41 @@ public class HealthSlider : MonoBehaviour
 {
     [SerializeField] private Slider _slider;
     [SerializeField] private Player _player;
-    [SerializeField] private float _speed;
+    [SerializeField] private float _speedOfDuration;
 
-    private float _targetValue = 1;
-    private float _maxValue = 1;
-
+    private Coroutine _smoothChangeJob;
+    private float _targetValue;
+    
     private void Start()
     {
-        StartCoroutine(SmoothChange());
+        _slider.value = 1;
     }
 
     private void OnEnable()
     {
-        _player.HealthIsChanged += OnChangedValue;
+        _player.HealthIsChanged += OnHealthChanged;        
     }
 
     private void OnDisable()
     {
-        _player.HealthIsChanged -= OnChangedValue;
+        _player.HealthIsChanged -= OnHealthChanged;
     }
 
-    private void OnChangedValue(int targetValue, int maxValue)
+    private void OnHealthChanged(int targetHealt, int maxHealth)
     {
-        _targetValue = targetValue;
-        _maxValue = maxValue;
+        if (_smoothChangeJob != null)
+            StopCoroutine(_smoothChangeJob);
 
-        SmoothChange();
+        _smoothChangeJob = StartCoroutine(SmoothChange(targetHealt, maxHealth));
     }
 
-    private IEnumerator SmoothChange()
+    private IEnumerator SmoothChange(int targetHealt, int maxHealth)
     {
         while (true)
         {
-            if (_slider.value != (float)_targetValue)
-            {
-                _slider.value = Mathf.MoveTowards(_slider.value, (float)_targetValue / _maxValue, _speed * Time.deltaTime);
-            }
-
+            _slider.value = Mathf.MoveTowards(_slider.value, (float) targetHealt / maxHealth, _speedOfDuration * Time.deltaTime);
+            
             yield return null;
-        }
+        }  
     }
 }

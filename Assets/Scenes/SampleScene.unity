@@ -207,14 +207,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 155332930}
-        m_TargetAssemblyTypeName: HealingButton, Assembly-CSharp
-        m_MethodName: HealingPlayer
-        m_Mode: 1
+      - m_Target: {fileID: 874339284}
+        m_TargetAssemblyTypeName: Player, Assembly-CSharp
+        m_MethodName: ApplyHealing
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 10
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -269,8 +269,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65dbafc302c1a43d9a216c879240effe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _player: {fileID: 874339284}
-  _healing: 10
 --- !u!1 &298653507
 GameObject:
   m_ObjectHideFlags: 0
@@ -992,7 +990,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _slider: {fileID: 879792133}
   _player: {fileID: 874339284}
-  _speed: 0.5
+  _speedOfDuration: 0.5
 --- !u!1 &887665365
 GameObject:
   m_ObjectHideFlags: 0
@@ -1623,14 +1621,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1514315223}
-        m_TargetAssemblyTypeName: DamageButton, Assembly-CSharp
-        m_MethodName: DamagePlayer
-        m_Mode: 1
+      - m_Target: {fileID: 874339284}
+        m_TargetAssemblyTypeName: Player, Assembly-CSharp
+        m_MethodName: ApplyDamage
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 10
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1685,8 +1683,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7ba816dbc10b42b28c8e65c306da029, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _player: {fileID: 874339284}
-  _damage: 10
 --- !u!1 &1658495346
 GameObject:
   m_ObjectHideFlags: 0
